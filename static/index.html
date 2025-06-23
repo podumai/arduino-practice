@@ -13,7 +13,7 @@
             .then(response => response.json())
             .then(data => {
               let paragraphElement = document.getElementById('temperatureField');
-              paragraphElement.innerHTML = `LM75A: ${data["LM75A"]} C`
+              paragraphElement.innerHTML = `LM75A: ${data["LM75A"]}`
             })
             .catch(error => console.error('Error: ', error));
           }
